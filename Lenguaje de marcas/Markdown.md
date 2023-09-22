@@ -14,11 +14,8 @@ Fue creado por *John Gruber* y *Aaron Swartz* en *2004* y se ha convertido en un
 
 ## Beneficios de usar Markdown:
 
-1. **Simplicidad:** Markdown es muy fácil de aprender y de usar. La mayoría de las personas pueden empezar a escribir en Markdown en cuestión de minutos, ya que utiliza una sintaxis muy sencilla y legible. Por ejemplo para hacer un título sólo hay que poner:
-   ```
-# Título
-
-
+1. **Simplicidad:** Markdown es muy fácil de aprender y de usar. La mayoría de las personas pueden empezar a escribir en Markdown en cuestión de minutos, ya que utiliza una sintaxis muy sencilla y legible. 
+ 
 1. **Legibilidad:** Los documentos escritos en Markdown son muy legibles incluso en su forma sin formato. Esto facilita la colaboración, ya que cualquiera puede revisar o editar documentos sin necesidad de herramientas específicas.
 
 1. **Portabilidad:** Como Markdown se puede convertir a HTML, PDF, Word y otros formatos, los documentos escritos en Markdown son altamente portátiles. Puedes generar versiones de tu documentación en diferentes formatos sin tener que volver a escribir todo.
