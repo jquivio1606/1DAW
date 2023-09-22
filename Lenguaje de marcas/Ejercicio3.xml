@@ -1,0 +1,40 @@
+
+<Ejercicio2>
+  
+  <Biblioteca>
+    <Libro titulo "El árbol de la ciencia">
+      <autor> Pio Baroja </autor>
+      <editorial> Cátedra </editorial>
+      <fecha_publicacion> 1911 </fecha_publicacion>
+      <precio> 10€ </precio>
+      <paginas> 272 </paginas>
+    </Libro>
+    
+    <Libro titulo " jjnvhnemo">
+      <autor> Pio Baroja </autor>
+      <editorial> Cátedra </editorial>
+      <fecha_publicacion> 1911 </fecha_publicacion>
+      <precio> 10€ </precio>
+      <paginas> 272 </paginas>
+    </Libro>
+    
+    <Libro titulo " hstwbucb ">
+      <autor> Pio Baroja </autor>
+      <editorial> Cátedra </editorial>
+      <fecha_publicacion> 1911 </fecha_publicacion>
+      <precio> 10€ </precio>
+      <paginas> 272 </paginas>
+    </Libro>
+
+    <Libro titulo " lkko skkd">
+      <autor> Pio Baroja </autor>
+      <editorial> Cátedra </editorial>
+      <fecha_publicacion> 1911 </fecha_publicacion>
+      <precio> 10€ </precio>
+      <paginas> 272 </paginas>
+    </Libro>
+
+  </Bibliboteca>
+
+</Ejercicio2>
+  
