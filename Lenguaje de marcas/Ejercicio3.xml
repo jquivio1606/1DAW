@@ -1,8 +1,8 @@
 
-<Ejercicio2>
+<Ejercicio3>
   
   <Biblioteca>
-    <Libro titulo "El árbol de la ciencia">
+    <Libro titulo "El arbol de la ciencia">
       <autor> Pio Baroja </autor>
       <editorial> Cátedra </editorial>
       <fecha_publicacion> 1911 </fecha_publicacion>
@@ -10,19 +10,19 @@
       <paginas> 272 </paginas>
     </Libro>
     
-    <Libro titulo " jjnvhnemo">
-      <autor> Pio Baroja </autor>
-      <editorial> Cátedra </editorial>
-      <fecha_publicacion> 1911 </fecha_publicacion>
-      <precio> 10€ </precio>
-      <paginas> 272 </paginas>
+    <Libro titulo " Don Quijote de la Mancha">
+      <autor> Miguel de Cervantes </autor>
+      <editorial> ABC </editorial>
+      <fecha_publicacion> 1605 </fecha_publicacion>
+      <precio> 25€ </precio>
+      <paginas> 928 </paginas>
     </Libro>
     
-    <Libro titulo " hstwbucb ">
-      <autor> Pio Baroja </autor>
-      <editorial> Cátedra </editorial>
-      <fecha_publicacion> 1911 </fecha_publicacion>
-      <precio> 10€ </precio>
+    <Libro titulo " Los pilares de la Tierra ">
+      <autor> Ken Follett </autor>
+      <editorial> XY2 </editorial>
+      <fecha_publicacion> 1989 </fecha_publicacion>
+      <precio> 30€ </precio>
       <paginas> 272 </paginas>
     </Libro>
 
@@ -36,5 +36,5 @@
 
   </Bibliboteca>
 
-</Ejercicio2>
+</Ejercicio3>
   
