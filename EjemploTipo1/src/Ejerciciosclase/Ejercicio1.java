@@ -1,16 +1,8 @@
 package Ejerciciosclase;
 
-/**
- * 
- */
-/**
- * 
- */
 public class Ejercicio1 {
 
-	/**
-	 * @param args
-	 */
+	
    public static void main(String[] args) {
 		
 		double d1 = 10;
