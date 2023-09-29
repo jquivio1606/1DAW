@@ -72,10 +72,11 @@ Entre los beneficios de utilizar Makdown tenemos:
 # Título
 Esto es un párrafo.
 ````
-
+## De Markdown a HTML.
+[Enlace](https://github.com/jquivio1606/1DAW/blob/main/Lenguaje%20de%20marcas/Practica_1/Markdown2.md#de-markdown-a-html)
 
 ## Más información.
 ### 
 
-[Cómo utilizar Markdown: Conceptos básicos](https://experienceleague.adobe.com/docs/contributor/contributor-guide/writing-essentials/markdown.html?lang=es).
+[Cómo utilizar Markdown: Conceptos básicos.](https://experienceleague.adobe.com/docs/contributor/contributor-guide/writing-essentials/markdown.html?lang=es)
 
