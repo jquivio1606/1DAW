@@ -1,0 +1,308 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+
+<Ejercicios>
+
+    <Ejercicio1a>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE perisfericos [
+<!ELEMENT perisfericos (#PCDATA)>
+]>
+
+<perisfericos> impresoras, monitor, y teclados </perisfericos>
+    
+    </Ejercicio1a>
+
+    <Ejercicio1b>
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE perro [
+<!ELEMENT perro (edad, nombre)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+]>
+
+<perro>
+    <edad> 8 </edad>
+    <nombre> Bady </nombre>
+</perro>
+
+    </Ejercicio1b>
+
+    <Ejercicio1c>
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE caballo [
+<!ELEMENT caballo (nombre , raza ,edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT raza (#PCDATA)>
+<!ELEMENT edad (EMPTY)>
+]>
+<caballo>
+<nombre> Juguetona  </nombre>
+<raza> pura sangre </raza>
+<edad/>
+</caballo>
+
+    </Ejercicio1c>
+
+    <Ejercicio2>
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE forma_geometrica [
+<!ELEMENT forma_geometrica (nombre, caracteristicas, numero_de_lados)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT caracteristicas (color, tipo)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT numero_de_lados (PCDADTA)>
+]>
+        
+        <forma_geometrica>
+            <nombre> rombo </nombre>
+            <caracteristicas>
+                <color> naranja</color>
+                <tipo> plana </tipo>
+            </caracteristicas>
+            <numero_de_lados> 4 </numero_de_lados>
+
+        </forma_geometrica>
+
+    </Ejercicio2>
+    
+    <Ejercicio2b>
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares [
+<!ELEMENT lugares (#PCDATA | lugar)*>
+<!ELEMENT lugar (#PCDATA)>
+]>
+
+<lugares>
+    En el 
+    <lugar>polo norte</lugar>
+    hace mucho frío. Pero, en el 
+    <lugar> desierto del Sahara </lugar>
+    hace mucho calor.
+</lugares>
+
+    </Ejercicio2b>
+
+    <Ejercicio2c>
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [
+<!ELEMENT elementos (pcdata*, any+, vacio)>
+<!ELEMENT pcdata (#PCDATA)>
+<!ELEMENT any ANY>
+<!ELEMENT vaio EMPTY>
+]>
+
+<elementos>
+    <any/>
+    <vacio/>
+</elementos>
+
+    </Ejercicio2c>
+<Ejercicio2d>
+     <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ciudades [
+<!ELEMENT ciudades (ciudad)>
+<!ELEMENT ciudad (nombre,capital?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT capital EMPTY>
+]>
+
+    <ciudades>
+        <ciudad>
+            <nombre> Buenos Aires</nombre>
+            <capital/>
+        </ciudad>
+        <ciudad>
+            <nombre> Liverpool </nombre>
+            <capital/>
+        </ciudad>
+        <ciudad>
+            <nombre> Osaka </nombre>
+            <capital/>
+        </ciudad>
+        <ciudad>
+            <nombre> Oslo </nombre>
+            <capital/>
+        </ciudad>
+    </ciudades>
+</Ejercicio2d>
+<Ejercicio2e>
+ <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE socios [
+    <!ELEMENT socios (socio)*>
+    <!ELEMENT socio (numero | clave , nombre, edad)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT clave (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    ]>
+    <socios>
+        <socio>
+        <nombre>Ana</nombre>
+        <edad>21</edad>
+        </socio>
+        <socio>
+        <numero>598</numero>
+        <nombre>Iker</nombre>
+        <edad>19</edad>
+        </socio>
+        <socio>
+        <clave>hY75Du</clave>
+        <nombre>Iker</nombre>
+        </socio>
+       </socios>
+
+</Ejercicio2e>
+
+<Ejercico3>
+<Ejercicio3a>
+    <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE formas [
+    <!ELEMENT formas (cuadrado, triangulo, circulo, otra)>
+    <!ELEMENT cuadrado (#PCDATA)>
+    <!ATTLIST cuadrado lados CDATA #REQUIRED>
+    <!ELEMENT triangulo (#PCDATA)>
+    <!ATTLIST triangulo lados CDATA #REQUIRED>
+    <!ELEMENT circulo (#PCDATA)>
+    <!ELEMENT otra EMPTY>
+    <!ATTLIST otra lados CDATA #REQUIRED>
+]>
+
+<formas>
+    <cuadrado lados= "4"> tablero </cuadrado>
+    <triangulo lados= "3"> señal </triangulo>
+    <circulo> anilla</circulo>
+    <otra lados= "7"/>
+</formas>
+
+</Ejercicio3a>
+<Ejercicio3b>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE empresas [
+    <!ELEMENT empresas (empresa)*>
+    <!ELEMENT empresa EMPTY>
+    <!ATTLIST empresa nombre CDATA #REQUIRED>
+    <!ATTLIST empresa fecha_de_fundacion CDATA #IMPLIED>
+   ]>
+
+   <empresas>
+    <empresa nombre="Apple"  fecha_de_fundacion="1976"/>
+    <empresa nombre= "Google"/>
+    <empresa nombre= "Microsoft" fecha_de_fundacion="1975"/>
+   </empresas>
+
+</Ejercicio3b>
+<Ejercicio3c>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE articulos [
+    <!ELEMENT articulos (articulo)+>
+    <!ELEMENT articulo (#PCDATA)>
+    <!ATTLIST articulo color CDATA #FIXED "rojo">
+   ]>
+   <articulos>
+    <articulo color="rojo"> bolígrafo </articulo>
+    <articulo> cuaderno </articulo> 
+    <articulo color="amarillo"> rotulador </articulo>
+   </articulos>
+
+</Ejercicio3c>
+<Ejercicio3d>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE geografia [
+    <!ELEMENT geografia (paises, ciudades)>
+    <!ELEMENT paises (pais)*>
+    <!ELEMENT pais (#PCDATA)>
+    <!ATTLIST pais codpais ID #REQUIRED>
+    <!ELEMENT ciudades (ciudad)*>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ATTLIST ciudad pais IDREFS #IMPLIED>
+   ]>
+  
+   <geografia>
+    <paises>
+    <pais codpais="1">Argentina</pais>
+    <pais codpais="2">Austria</pais>
+    <pais codpais="3">Japón</pais>
+    <pais codpais="4">Noruega</pais>
+    </paises>
+    <ciudades>
+    <ciudad pais="1, 2, 3">Osaka</ciudad>
+    <ciudad>Oslo</ciudad>
+    <ciudad pais="1, 2, 3">Sevilla</ciudad>
+    <ciudad pais="1, 2, 3">Tokio</ciudad>
+    <ciudad pais="1, 2, 3">Viena</ciudad>
+    </ciudades>
+   </geografia>
+
+</Ejercicio3d>
+<Ejercicio3e>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE pizzas [
+     <!ELEMENT pizzas (ingredientes, tipos)>
+     <!ELEMENT ingredientes (ingrediente)*>
+     <!ELEMENT ingrediente (#PCDATA)>
+     <!ATTLIST ingrediente coding ID #REQUIRED>
+     <!ELEMENT tipos (tipo)*>
+     <!ELEMENT tipo EMPTY>
+     <!ATTLIST tipo nombre CDATA #REQUIRED>
+     <!ATTLIST tipo ingredientes IDREFS #REQUIRED>
+    ]>
+    <pizzas>
+     <ingredientes>
+        <ingrediente coding="HUE">Huevo</ingrediente>
+        <ingrediente coding="CHA">Champiñón</ingrediente>
+        <ingrediente coding="CHO">Chorizo</ingrediente>
+        <ingrediente coding="CAL">Calabacín</ingrediente>
+        <ingrediente coding="JAM">Jamón de York</ingrediente>
+     </ingredientes>
+     <tipos>
+     <tipo nombre="Fantástica" ingredientes="CAL, CHA, ZAN"/>
+     <tipo nombre="Sabrosa" ingredientes="CHA, CHO, JAM, HUE"/>
+     </tipos>
+    </pizzas>
+
+
+</Ejercicio3e>
+
+
+</Ejercico3>
+<Ejercicio4>
+<Ejercicio4a>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE declaraciones [
+    <!ELEMENT declaraciones (constante | tipo_de_dato | variable)*>
+    <!ELEMENT constante (#PCDATA)>
+    <!ATTLIST constante valor CDATA #REQUIRED>
+    <!ELEMENT tipo_de_dato (#PCDATA)>
+    <!ELEMENT variable (#PCDATA)>
+    <!ATTLIST variable tipo CDATA #IMPLIED>
+   ]>
+
+   <declaraciones>
+    <constante valor="3.141592">PI</constante>
+    <variable tipo="real">radio</variable>
+    <variable>area</variable>
+    <variable>longitud</variable>
+   </declaraciones>
+
+</Ejercicio4a>
+<Ejercicio4b>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE saludos [
+    <!ELEMENT saludos (saludo*)>
+    <!ELEMENT saludo (#PCDATA)>
+    <!ATTLIST saludo idioma (ALE | FRA | ITA | POR) #IMPLIED>
+   ]>
+   <saludos>
+    <saludo idioma="ALE">Hallo</saludo>
+    <saludo>Hola</saludo>
+    <saludo idioma="ITA">Ciao</saludo>
+    <saludo idioma="FRA">Salut</saludo>
+    <saludo idioma="POR">Olá</saludo>
+   </saludos>
+
+</Ejercicio4b>
+
+</Ejercicio4>
+
+</Ejercicios>
