@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<videojuegos>
+    <videojuego id = "1">
+        <titulo>The Sims 4</titulo>
+        <desarrollador>Maxis, The Sims Studio, Blind Squirrel Games</desarrollador>
+        <lanzamiento> 02/09/2014</lanzamiento>
+    </videojuego>
+    <videojuego id = "2">
+        <titulo>Spider-Man</titulo>
+        <desarrollador>Insomniac Games Marvel Games Nixxes Software (Windows)</desarrollador>
+        <lanzamiento> 07/09/2018 </lanzamiento>
+    </videojuego>
+    <videojuego id = "3">
+        <titulo>ARK: Survival Evolved</titulo>
+        <desarrollador>Studio Wildcard, Instinct Games, Efecto Studios</desarrollador>
+        <lanzamiento> 28/08/2017</lanzamiento>
+    </videojuego>
+</videojuegos>

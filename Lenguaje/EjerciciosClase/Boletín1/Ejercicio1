@@ -1,0 +1,19 @@
+<?xml version= "1.0" encoding= "UTF-8" ?>
+
+<Ejercicio1> 
+    
+    <Ejercicio1a>
+En el 1a dentro de la etiqueta libro &quot; autor,titulo y precio &quot; son atributos, no otras etiquetas como lo son en el 1b.
+    </Ejercicio1a>
+
+    <Ejercicio1b>
+      <libro>
+          <autores>
+            <autor>Isabel Castro</autor>
+            <autor>Domingo Fernández Pérez</autor>
+          </autores>
+          <titulo>XML Guía de Aprendizaje</titulo>
+          <precio moneda= "euros" >30</precio>
+      </libro>
+    </Ejercicio1b>
+</Ejercicio1>
