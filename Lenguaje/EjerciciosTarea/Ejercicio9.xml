@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio9.xsd">
+    <vehiculo>
+        <marca>Toyota</marca>
+        <modelo>Camry</modelo>
+        <f_fabricacion dia="15" mes="Octubre" anio="2022" />
+        <lugar_fabricacion pais="JP">
+            <localidad>Asia</localidad>
+        </lugar_fabricacion>
+        <unidades>1000</unidades>
+    </vehiculo>
+    <vehiculo>
+        <marca>Ford</marca>
+        <modelo>Mustang</modelo>
+        <f_fabricacion dia="20" mes="Septiembre" anio="2021" />
+        <lugar_fabricacion pais="US">
+            <localidad>EEUU</localidad>
+        </lugar_fabricacion>
+        <unidades>500</unidades>
+    </vehiculo>
+</vehiculos>

@@ -1,0 +1,13 @@
+<?xml version= "1.0" encoding= "UTF-8" ?>
+
+<xs:element name= "tiendas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name= "tienda" maxOccurs= "unbounded">
+
+
+
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
