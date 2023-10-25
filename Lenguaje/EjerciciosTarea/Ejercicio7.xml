@@ -1,5 +1,5 @@
 
-<!DOCTYPE universidad [
+
 <!ELEMENT universidad (alumno , profesor)+>
 
 <!ELEMENT profesor (datosPersonales, despacho, Tutorias, asignaturasImpartidas)>
@@ -34,5 +34,3 @@
 <!ELEMENT cp (#PCDATA)>
 <!ELEMENT telefonos (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
-
-]>
