@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogo>
+    
+    <producto categoria = "procesadores" id= "1">
+        <nombre> AMD Ryzen 7 5800X 3.8GHz  </nombre>
+        <precio> 220,9€ </precio>
+        <descripcion> El procesador que permite disfrutar una experiencia de juego de élite. Ocho núcleos optimizados para computadoras de juego con alto FPS.  
+        </descripcion>
+    </producto>
+
+    <producto categoria = "Placas Base" id= "2">
+        <nombre> MSI MPG GAMING PLUS </nombre>
+        <precio> 149,9€  </precio>
+        <descripcion> La serie MPG saca lo mejor de los jugadores al permitir una expresión completa en color con control avanzado de iluminación RGB y sincronización.
+        </descripcion>
+    </producto>
+
+    <producto categoria = "Memoria RAM" id= "3">
+        <nombre> Corsair Vengeance LPX DDR4 3200MHz PC4-25600 32GB 2x16GB CL16 </nombre>
+        <precio> 75,99€ </precio>
+        <descripcion> La memoria VENGEANCE LPX está diseñada para overclocking de alto rendimiento. El disipador térmico está hecho de aluminio puro para una disipación de calor más rápida, 
+        y el PCB de ocho capas ayuda a controlar el calor y proporciona un margen superior de overclocking superior. 
+        </descripcion>
+    </producto>
+
+    <producto categoria = "Tarjetas Gráficas" id= "4">
+        <nombre> MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6 </nombre>
+        <precio>  319,90€ </precio>
+        <descripcion> Ofrece un diseño centrado en el rendimiento que mantiene los elementos esenciales para realizar cualquier tarea. 
+        Una disposición de doble ventilador en un diseño industrial rígido permite que esta tarjeta gráfica de aspecto elegante se adapte a cualquier construcción. 
+        </descripcion>
+    </producto>
+    
+    <producto categoria = "Cajas" id= "5">
+        <nombre> Tempest Umbra RGB Torre ATX Negra </nombre>
+        <precio> 75€ </precio>
+        <descripcion> Su chasis es compatible con placas ITX, ATX y Micro ATX. Cuenta con 7 bahías de expansión y espacio para 4 discos duros (dos HDD 3,5” y dos SSD 2,5”), hasta 6 ventiladores (4 ya preinstalados), y refrigeración líquida de 120 o 240. </descripcion>
+    </producto>
+
+</catalogo>
