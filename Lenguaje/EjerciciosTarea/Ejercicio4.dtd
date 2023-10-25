@@ -1,6 +1,4 @@
 
-    <!-- Actividad 4 -->
-    
 <!ELEMENT BDsms (sms+)>
 <!ELEMENT sms (telefono,fecha,hora,mensaje,spam?)>
 <!ELEMENT telefono (#PCDATA)>
