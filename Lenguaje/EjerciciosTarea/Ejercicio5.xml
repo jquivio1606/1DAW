@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding = "UTF-8"  standalone= "yes" ?>
 
 <!DOCTYPE agenda [
-<!ELEMENT agenda (contacto)+>
+<!ELEMENT agenda (contacto)*>
 <!ELEMENT contacto (nombre, apellidos, direccion, telefonos)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT apellidos (#PCDATA)>
@@ -12,7 +12,7 @@
 <!ELEMENT cp (#PCDATA)>
 <!ELEMENT ciudad (#PCDATA)>
 <!ELEMENT provincia (#PCDATA)>
-<!ELEMENT telefonos (telcasa, telmovil, teltrabajo)+>
+<!ELEMENT telefonos (telcasa | telmovil | teltrabajo)+>
 <!ELEMENT telcasa (#PCDATA)>
 <!ELEMENT telmovil (#PCDATA)>
 <!ELEMENT teltrabajo (#PCDATA)>
