@@ -1,0 +1,58 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+        <xs:complexType>
+           <xs:all>
+            <xs:element name ="datos-emisor">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:group ref="datosPersonales"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name ="datos-cliente">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:group ref="datosPersonales"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name ="detalle-factura">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name= "linea" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="descripcion" type = "xs:string"/>
+                                    <xs:element name= "cantidad" type ="xs:integer"/>
+                                    <xs:element name= "oferta" minOccurs="0"/>
+                                    <xs:element name= "pvp" type ="xs:double"/>
+                                </xs:sequence>
+                                <xs:attribute name= "codigo-articulo" type = "xs:string"/>
+                                <xs:attribute name= "tipo" type = "xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name= "importe" type = "xs:double"/>
+                </xs:complexType>
+            </xs:element>
+           </xs:all>
+           <xs:attribute name= "numero" use="required">
+                <xs:simpleType>
+                    <xs:restriction base= "xs:integer">
+                        <xs:pattern value= "[0-9]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+           </xs:attribute>
+           <xs:attribute name= "fecha" type= "xs:date" use="required"/>
+           <xs:attribute name= "moneda" type="xs:string" fixed="Euro"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name= "datosPersonales">
+            <xs:sequence>
+                <xs:element name= "nombre" type= "xs:string"/>
+                <xs:element name = "cif" type= "xs:string"/>
+                <xs:element name= "telefono" type ="xs:integer"/>
+            </xs:sequence>
+    </xs:group>
+</xs:schema>
