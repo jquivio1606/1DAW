@@ -114,12 +114,12 @@ public class Ejercicio10 {
 					break;	
 					
 				case 8: 
-				System.out.println("Introduce el DNI sin letra, para saber tu letra asociada:");
-				int DNI= scan.nextInt();
-				
-				String LetraDNI = UtilidadesEj10.LetraDNI(DNI);
-				System.out.printf("Para el DNI %d el NIF es: %s", DNI, LetraDNI);
-				
+					System.out.println("Introduce el DNI sin letra, para saber tu letra asociada:");
+					int DNI= scan.nextInt();
+					
+					String LetraDNI = UtilidadesEj10.LetraDNI(DNI);
+					System.out.printf("Para el DNI %d el NIF es: %s", DNI, LetraDNI);
+					
 					break;
 				
 				case 9: 
@@ -156,6 +156,11 @@ public class Ejercicio10 {
 					float areaRectangulo = UtilidadesEj10.AreaRectangulo(base1, altura);
 					System.out.printf("El área de un regtangulo con %f de base y %f de altura es igual a: %f", base1, altura, areaRectangulo);
 					
+					break;
+					
+				case 0: 
+					salir = false;
+				
 					break;
 					
 				default:
