@@ -127,7 +127,7 @@ public class UtilidadesEj10 {
 		
 		return numVolteado;		
 	} 
-/* public static int DigitoN(int posicionN, int digito) {
+	/* public static int DigitoN(int posicionN, int digito) {
 		
 		// NO SE COMO HACER LA CUENTA PA Q FUNCIONE
 			
@@ -248,7 +248,13 @@ public class UtilidadesEj10 {
 	 		return LetraDNI;
 	 	}
 	 	
-	
+	 	/**
+		 *   Introduce el DNI y la letra, y te dice si el NIF es el asociado o no.
+		 * 
+		 * @param DNI, LetraNif
+		 * @return nifCorrecto
+		 */
+	 	
 	 	public static boolean NifCorrecto (int Dni, String LetraNif) {
 	 		
 	 		boolean nifCorrecto = false;
@@ -261,6 +267,13 @@ public class UtilidadesEj10 {
 	 		return nifCorrecto;
 	 	}
 	
+	 	/**
+		 *   Introduce el radio y devuelve el área del círculo.
+		 * 
+		 * @param radio
+		 * @return areaCirculo
+		 */
+	 	
 	 	public static double AreaCirculo (double radio) {
 	 		double areaCirculo= 0d;
 	 		final double numPi = Math.PI;
@@ -270,12 +283,38 @@ public class UtilidadesEj10 {
 	 		return areaCirculo;
 	 	}
 	 	
+	 	/**
+		 *   Introduce la base y la altura y devuelve el área del rectangulo.
+		 * 
+		 * @param base1, altura
+		 * @return areaRectangulo
+		 */
+	 	
 	 	public static float AreaRectangulo (float base1, float altura) {
 	 		float areaRectangulo= base1 * altura;
 	 		
 	 		return areaRectangulo;
 	 	}
-
+	 	
+	 	/**
+		 *   Introduce un número y devuelve el factorial.
+		 * 
+		 * @param numF
+		 * @return resultado
+		 */
+	 	
+	 	public static long Factorial (int numF) {
+	 		
+	 		long resultado = 1L;
+	 		int aux = numF;	
+	 		
+	 		for (int cont = 1; cont <= aux; cont++) {
+	 			resultado *= cont;
+	 			
+	 		}
+	 			 		
+	 		return resultado;
+	 	}
 	
 
 
