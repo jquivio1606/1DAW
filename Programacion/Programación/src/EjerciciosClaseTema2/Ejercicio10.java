@@ -157,6 +157,19 @@ public class Ejercicio10 {
 					System.out.printf("El área de un regtangulo con %f de base y %f de altura es igual a: %f", base1, altura, areaRectangulo);
 					
 					break;
+
+				case 12:
+					System.out.println("Introduce un número para saber el factorial:");
+					int numF = scan.nextInt();
+					
+						if (numF < 0) {
+							System.out.println("No se puede introducir un número negativo.");
+						} else {
+							long resultado = UtilidadesEj10.Factorial(numF);
+							System.out.printf("El factorial del número %d es: %d", numF, resultado);
+						}
+					
+					break;
 					
 				case 0: 
 					salir = false;
