@@ -14,18 +14,22 @@ public class Ejercicio10 {
 			do {
 			
 				System.out.println("\n" + "-------------------|MENÚ|------------------ \n" 
-					+ "¿Qué tipo de operación quieres realizar? \n"
-					+ " 1. EsCapicua\r\n"
-					+ " 2. EsPrimo\r\n"
-					+ " 3. SiguientePrimo\r\n"
-					+ " 4. Potencia\r\n"
-					+ " 5. Digitos\r\n"
-					+ " 6. VoltearNum\r\n"
-					+ " 7. DigitoN\r\n"
-					+ " 0. Salir\r\n"
-					+ "------------------------------------------ \n" 
-					+ "Elige un valor:");
-			
+				+ "¿Qué tipo de operación quieres realizar? \n"
+				+ " 1. EsCapicua\r\n"
+				+ " 2. EsPrimo\r\n"
+				+ " 3. SiguientePrimo\r\n"
+				+ " 4. Potencia\r\n"
+				+ " 5. Digitos\r\n"
+				+ " 6. VoltearNum\r\n"
+				+ " 7. DigitoN\r\n"
+				+ " 8. LetraDNI\r\n"
+				+ " 9. NifCorrecto\r\n"
+				+ " 10. AreaCirculo\r\n"
+				+ " 11. AreaRectangulo\r\n"
+				+ " 0. Salir\r\n"
+				+ "------------------------------------------ \n" 
+				+ "Elige un valor:");
+					
 			
 			int opcion = scan.nextInt();
 			
@@ -108,6 +112,51 @@ public class Ejercicio10 {
 					salir = false;
 					
 					break;	
+					
+				case 8: 
+				System.out.println("Introduce el DNI sin letra, para saber tu letra asociada:");
+				int DNI= scan.nextInt();
+				
+				String LetraDNI = UtilidadesEj10.LetraDNI(DNI);
+				System.out.printf("Para el DNI %d el NIF es: %s", DNI, LetraDNI);
+				
+					break;
+				
+				case 9: 
+					System.out.println("Introduce el DNI sin letra, para saber tu letra asociada:");
+					int Dni= scan.nextInt();
+					scan.nextLine();
+					System.out.println("Introduce la letra de tu DNI:");
+					String LetraNif = scan.nextLine();
+					
+					boolean nifCorrecto = UtilidadesEj10.NifCorrecto(Dni,LetraNif);
+					
+					if (nifCorrecto) {
+						System.out.printf("Es correcto. El NIF %s corresponde al DNI: %d", LetraNif, Dni);
+					} else {
+						System.out.printf("El NIF %s no corresponde con el DNI %d", LetraNif, Dni );
+					}
+					break;
+				
+				case 10: 
+					System.out.println("Introduce el radio del círculo para calcular el área:");
+					double radio= scan.nextDouble();
+					
+					double areaCirculo = UtilidadesEj10.AreaCirculo(radio);
+					System.out.printf("El área de un círculo cuyo radio es %f es igual a: %f", radio, areaCirculo);
+					
+					break;
+				
+				case 11: 
+					System.out.println("Introduce la base del rectangulo para calcular el área:");
+					float base1 = scan.nextFloat();
+					System.out.println("Introduce la altura del rectangulo para calcular el área:");
+					float altura= scan.nextFloat();
+					
+					float areaRectangulo = UtilidadesEj10.AreaRectangulo(base1, altura);
+					System.out.printf("El área de un regtangulo con %f de base y %f de altura es igual a: %f", base1, altura, areaRectangulo);
+					
+					break;
 					
 				default:
 
