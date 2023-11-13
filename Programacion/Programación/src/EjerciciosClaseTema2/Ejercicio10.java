@@ -26,6 +26,8 @@ public class Ejercicio10 {
 				+ " 9. NifCorrecto\r\n"
 				+ " 10. AreaCirculo\r\n"
 				+ " 11. AreaRectangulo\r\n"
+				+ " 12. Factorial\r\n"
+				+ " 13. CambioExacto\r\n"
 				+ " 0. Salir\r\n"
 				+ "------------------------------------------ \n" 
 				+ "Elige un valor:");
@@ -170,6 +172,18 @@ public class Ejercicio10 {
 						}
 					
 					break;
+					
+				case 13:
+					System.out.println("Introduce la cantidad de dinero que quieres cambiar:");
+					double dineroAcambiar = scan.nextDouble();
+					scan.next();
+					
+					String cambio = UtilidadesEj10.CambioExacto(dineroAcambiar);
+					
+					
+			        System.out.println("El cambio para " + dineroAcambiar + " euros es:" + cambio);
+			        
+			        break;
 					
 				case 0: 
 					salir = false;
