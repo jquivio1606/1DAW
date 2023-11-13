@@ -315,7 +315,96 @@ public class UtilidadesEj10 {
 					
 		return resultado;
 	}
-
+	public static String CambioExacto(double dineroAcambiar) {
+			
+		String cambio= "";
+		int billete500 = 0, billete200 = 0, billete100= 0, billete50= 0, billete20= 0, billete10= 0, billete5 = 0;
+		int moneda2€ = 0, moneda1€ = 0, moneda50cent = 0, moneda20cent = 0, moneda10cent = 0,moneda5cent = 0, moneda2cent = 0, moneda1cent = 0;
+		
+		double aux= dineroAcambiar;
+		
+		while (aux > 0) {
+			if (aux >= 500) {
+				billete500++;
+				aux = aux - 500;
+				
+			} else if (aux >= 200) {
+				billete200++;
+				aux = aux - 200;
+				
+			} else if (aux >= 100) {
+				billete100++;
+				aux = aux - 100;
+				
+			} else if (aux >= 50) {
+				billete50++;
+				aux = aux - 50;
+				
+			} else if (aux >= 20) {
+				billete20++;
+				aux = aux - 20;
+				
+			} else if (aux >= 10) {
+				billete10++;
+				aux = aux - 10;
+				
+			} else if (aux >= 5) {
+				billete5++;
+				aux = aux - 5;
+				
+			} else if (aux >= 2) {
+				moneda2€++;
+				aux = aux - 2;
+				
+			} else if (aux >= 1) {
+				moneda1€++;
+				aux = aux - 1;
+				
+			} else if (aux >= 0.50) {
+				moneda50cent++;
+				aux = aux - 0.5;
+				
+			}  else if (aux >= 0.20) {
+				moneda20cent++;
+				aux = aux - 0.2;
+				
+			}  else if (aux >= 0.10) {
+				moneda10cent++;
+				aux = aux - 0.10;
+				
+			}  else if (aux >= 0.5) {
+				moneda5cent++;
+				aux = aux - 0.05;
+				
+			}  else if (aux >= 0.2) {
+				moneda2cent++;
+				aux = aux - 0.02;
+				
+			}  else if (aux >= 0.1) {
+				moneda1cent++;
+				aux = aux - 0.01;
+				
+			} 
+		}
+	
+		cambio = billete500 + "billete/s de 500€" + 
+				 billete200 + "billete/s de 200€" +
+				 billete100 + "billete/s de 100€" + 
+				 billete50 + "billete/s de 50€" + 
+				 billete20 + "billete/s de 20€" + 
+				 billete10 + "billete/s de 10€" + 
+				 billete5 + "billete/s de 5€" + 
+				 moneda2€ + "moneda/s de 2€" + 
+				 moneda1€ + "moneda/s de 1€" + 
+				 moneda50cent + "moneda/s de 50 cent" + 
+				 moneda20cent + "moneda/s de 20 cent" + 
+				 moneda10cent + "moneda/s de 10 cent" + 
+				 moneda5cent + "moneda/s de 5 cent" + 
+				 moneda2cent + "moneda/s de 2 cent" + 
+				 moneda1cent + "moneda/s de 1 cent";	
+		
+		return cambio;
+	}
 
 
 }
