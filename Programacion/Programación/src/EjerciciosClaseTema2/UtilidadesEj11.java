@@ -1,0 +1,154 @@
+package EjerciciosClaseTema2;
+
+import org.apache.commons.lang3.StringUtils;
+
+public class UtilidadesEj11 {
+
+	/**
+	 * Devuelve true o false si la cadena es igual si se lee por delante o por detrás
+	 * @param cadena1
+	 * @return esPalindromo
+	 */
+	
+		public static boolean EsPalindromo (String palabra1) {
+			
+			boolean esPalindromo = false;
+			String palabraInvertida = Invertircadena(palabra1);
+			if (palabra1.equalsIgnoreCase(palabraInvertida)) {
+				esPalindromo = true;
+			}
+			
+			
+			return esPalindromo;
+		}
+		
+		/**
+		 * Devuelve true o false si no se repiten letras en la cadena
+		 * @param cadena2
+		 * @return esHeterograma
+		 */
+		
+		public static boolean EsHeterograma (String palabra2) {
+			
+			boolean esHeterograma = true;
+			palabra2 = palabra2.toLowerCase();
+			
+			for (int index = 0; index < palabra2.length(); index++) {
+				char charAct = palabra2.charAt(index);
+				char proxChar= palabra2.charAt(index + 1);
+				if (charAct == proxChar) {
+					esHeterograma =false;
+				}
+				
+			}
+			
+			
+			return esHeterograma;
+
+	}
+		/**
+		 * Cuenta las vocales que hay en uan cadena 
+		 * @param cad
+		 * @return String
+		 */
+	public static String ContarVocales (String cad) {
+		
+		int contA= 0;
+		int contE= 0;
+		int contI= 0;
+		int contO= 0;
+		int contU= 0;
+		for (int index = 0; index < cad.length(); index ++) {
+			
+			if (cad.charAt(index) == 'a' || cad.charAt(index) == 'á') {
+				contA++; 
+			} else if (cad.charAt(index) == 'e' || cad.charAt(index) == 'é') {
+				contE++;
+			} else if (cad.charAt(index) == 'i' || cad.charAt(index) == 'í') {
+				contI++;
+			} else if (cad.charAt(index) == 'o' || cad.charAt(index) == 'ó') {
+				contO++;
+			} else if (cad.charAt(index) == 'u' || cad.charAt(index) == 'ú') {
+				contU++;
+			}
+		
+		}
+		
+		String result = contA + " a \n" + contE + " e \n" + contI + " i \n" + contO + " o \n" + contU + " u \n";
+		
+		return result;
+	}
+	
+	/**
+	 * Invierte la cadena 
+	 * @param cad1
+	 * @return String
+	 */
+	
+
+	public static String Invertircadena (String cad1) {
+		String cadenaInvertida = StringUtils.reverse(cad1);
+		
+		return cadenaInvertida;
+	}
+	
+	
+	/**
+	 * Elimina los espacios en blanco de la cadena 
+	 * @param cad2
+	 * @return String
+	 */
+	
+ 	
+	public static String EliminarEspacios (String cad2) {
+		String cadenaSinEspacios = StringUtils.deleteWhitespace(cad2);  
+		
+		return cadenaSinEspacios;
+	}
+	
+	
+	/**
+	 * Elimina los espacios dobles en blanco de la cadena, y deja solo un espacio. 
+	 * @param cad2
+	 * @return String
+	 */
+	
+	public static String EliminarEspaciosDobles (String cad3) {
+		
+		String[] palabras = cad3.split("\\s+");
+        String cadenaSinEspaciosDobles = StringUtils.join(palabras, " ");
+		
+		return cadenaSinEspaciosDobles;
+	}
+	
+	/**
+	 * Cuenta las palabras que hay en uan cadena 
+	 * @param cad
+	 * @return String
+	 */
+		public static int ContarPalabras(String cad4) {
+			
+			int cont= 1;
+			
+			for (int index = 0; index < cad4.length(); index ++) {
+				if (cad4.charAt(index) == ' ') {
+					cont++;
+				}
+			}
+			
+			return cont;
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
