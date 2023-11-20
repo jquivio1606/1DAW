@@ -66,8 +66,7 @@ public class UsoDeObjetos {
 					System.out.println("Introduce el radio del círculo para calcular el área:");
 					double radio= scan.nextDouble();
 					
-					double areaCirculo = UtilidadesMatematicas.AreaCirculo(radio);
-					System.out.printf("El área de un círculo cuyo radio es %f es igual a: %f \n", radio, areaCirculo);
+					System.out.printf("El área de un círculo cuyo radio es %f es igual a: %f \n", radio, UtilidadesMatematicas.AreaCirculo(radio));
 					
 					break;
 	
