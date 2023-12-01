@@ -1,0 +1,30 @@
+body{
+    font-size: 10px; 
+    background-color: white; 
+    text-align: center;
+}
+.azul {
+    font-size: 11px; 
+    color:blue; 
+    text-align: left;
+}
+.fondo_negro{
+    background-color: black; 
+    color: white; 
+    font-size: 15px; 
+    text-align: left;
+}
+.cursiva {
+    font-style: italic; 
+    font-size: medium;
+}
+hr {
+    color:grey; 
+    border: dotted 1px; 
+    text-align: left;
+}
+.rojo {
+    color:red; 
+    text-align: left; 
+    font-size: xx-large;
+}
