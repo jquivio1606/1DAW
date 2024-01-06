@@ -6,12 +6,14 @@ public class MaquinaExpendedora {
 
 	public static void main(String[] args) {
 
+		//TODO: Terminar de ver las condiciones al final del ejercicio y cambiar algo si es necesario
+		
 		Scanner scan = new Scanner (System.in);
 		boolean terminar = false;
 		int Posicionbebida = -1;
 		int fila =  -1;
 		int columna = -1;
-		 
+		int ventas = 0;
 		String[][] productos = {
 				{"Coca-Cola", "Sprite", "Fanta naranja"},
 				{"Fanta limón", "Red Bull", "Monster"},
@@ -48,6 +50,7 @@ public class MaquinaExpendedora {
 				} else {
 					System.out.println("Ahí tiene su " + productos [fila][columna]);
 					cantidad [fila][columna]--;
+					ventas++;
 				}
 				
 				
@@ -57,7 +60,7 @@ public class MaquinaExpendedora {
 				for (int i = 0; i < 4; i++) {
 					for( int j = 0; j < 3; j++) {
 						if (cantidad[i][j] != 0) {
-							System.out.print("cd:" + i +1 + "" + j +1 + "  " + productos[i][j] + "\t\t\t");	
+							System.out.print("cd:" + (i + 1) + "" + (j + 1) + "  " + productos[i][j] + "\t\t\t");	
 						} else {
 							System.out.print("\t\t\t\t\t");
 						}
@@ -91,7 +94,8 @@ public class MaquinaExpendedora {
 				break;
 			case 4:
 				terminar = true;
-				System.out.println("Hasta la próxima!!");
+				System.out.println("Las ventas han sido: " + ventas
+						+ "\nHasta la próxima!!");
 				break;
 				
 			default:
@@ -101,6 +105,7 @@ public class MaquinaExpendedora {
 		
 		} while (!terminar);
 	
+		scan.next();
 		scan.close();
 
 	}
