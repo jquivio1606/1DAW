@@ -1,0 +1,75 @@
+
+
+Método 1: 'difference(Str1, Str2)'
+	Encuentra la diferencia entre dos cadenas, y devuelve la parte que es diferente.
+
+Ejemplo:
+
+	String prueba = "El otro día fui al cine";
+	String prueba2 = "El otro día fui al cine con unos amigos y comí palomitas";
+	
+	StringUtils.difference(prueba, prueba2));
+	
+	
+	
+	
+Método 2: 'defaultIfEmpty(StrEmpty, StrDefault)'
+	Comprueba si un String está vacío, y si ese es el caso, devuelve una cadena predeterminada.
+
+Ejemplo 1:
+
+	String prueba3 = "";
+
+	StringUtils.defaultIfEmpty(prueba3, "La cadena original está vacía");
+
+Ejemplo 2:
+
+	String prueba3 = "";
+	String default = "La cadena original está vacía";
+	
+	StringUtils.defaultIfEmpty(prueba3, default);
+
+
+
+
+Método 3: 'reverse(Str)'
+	Invierte la cadena.
+
+Ejemplo:
+
+	String prueba = "El otro día fui al cine";
+	
+	StringUtils.reverse(prueba)
+
+
+
+
+Método 4: 'countMatches(Str1, Str2);'
+	Cuenta cuantas veces aparece una cadena en otra cadena más grande. 
+	
+Ejemplo:
+
+	String prueba4 = "Adios a todos!!";
+	
+	StringUtils.countMatches(prueba4, "o");
+	
+	
+	
+	
+Método 5: 'isNumeric(Str)'
+	Devuelve true si la cadena es numérica, y false si no lo es.
+
+Ejemplo:
+
+	String prueba2 = "El otro día fui al cine con unos amigos y comí palomitas";
+	
+	StringUtils.isNumeric(prueba2);	
+	
+	
+	
+	
+	
+	
+	
+	
+	
