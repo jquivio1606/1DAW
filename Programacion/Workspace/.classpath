@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/DAW/Repositorio/1DAW/Programacion/commons-lang3-3.0.jar"/>
+	<classpathentry kind="lib" path="F:/1DAW/Programacion/commons-lang3-3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
